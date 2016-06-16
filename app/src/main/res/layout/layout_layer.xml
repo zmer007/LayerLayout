@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layer_noInoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/layer_noInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无内容"
+            android:textColor="@color/font_color_gray_dark"
+            android:textSize="@dimen/font_size_medium"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layer_netErrorContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/network_fail_wifi"/>
+
+        <TextView
+            android:id="@+id/layer_netErrorCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.6dp"
+            android:background="@drawable/round_rectangle_gray_frame_selector"
+            android:paddingBottom="5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="5dp"
+            android:text="检查网络"
+            android:textColor="#8a8a8a"
+            android:textSize="@dimen/font_size_plaint"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layer_loadingErrorContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/network_fail_wifi"/>
+
+        <TextView
+            android:id="@+id/layer_loadingErrorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:includeFontPadding="true"
+            android:textColor="@color/font_color_gray"
+            android:textSize="@dimen/font_size_medium"/>
+
+        <TextView
+            android:id="@+id/layer_loadingErrorReload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.6dp"
+            android:background="@drawable/round_rectangle_gray_frame_selector"
+            android:paddingBottom="5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="5dp"
+            android:text="@string/reload"
+            android:textColor="#8a8a8a"
+            android:textSize="@dimen/font_size_plaint"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layer_loadingContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/layer_loadingImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_loading"/>
+
+        <TextView
+            android:id="@+id/layer_loadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/loading_colon"
+            android:textColor="@color/font_color_gray_dark"
+            android:textSize="@dimen/font_size_medium"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/layer_contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</merge>
